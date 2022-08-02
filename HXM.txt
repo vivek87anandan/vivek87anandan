@@ -1,0 +1,1684 @@
+mountpoint /mnt/foo; printf "$?\n"
+/dev/foo is a mountpoint
+0
+
+mountpoint /mnt/bar; printf "$?\n"
+/dev/bar is not a mountpoint
+1
+
+
+
+
+nlgcp57nw0001:~ # (echo -e "sh name\np type:NSR group") | /usr/sbin/nsradmin -i- | grep "\S" | cut -d ":" -f2 | sed 's/.$//' | sort -u
+ BOOTSTRAP
+ CFI_EXPIRE
+ NSR_SERVER
+ NT_1_SUN_01
+ NT_2_SUN_01
+ NT_3_SUN_01
+ NT_4_SUN_01
+ UX_1_FRI_01
+ UX_1_FRI_02
+ UX_1_FRI_03
+ UX_1_FRI_04
+ UX_1_FRI_05
+ UX_1_FRI_06
+ UX_1_SAT_01
+ UX_1_SAT_02
+ UX_1_SAT_03
+ UX_1_SAT_04
+ UX_1_SAT_05
+ UX_1_SAT_06
+ UX_1_SUN_01
+ UX_1_SUN_02
+ UX_1_SUN_03
+ UX_1_SUN_04
+ UX_1_SUN_05
+ UX_1_SUN_06
+ UX_2_FRI_01
+ UX_2_FRI_02
+ UX_2_FRI_03
+ UX_2_FRI_04
+ UX_2_FRI_05
+ UX_2_FRI_06
+ UX_2_SAT_01
+ UX_2_SAT_02
+ UX_2_SAT_03
+ UX_2_SAT_04
+ UX_2_SAT_05
+ UX_2_SAT_06
+ UX_2_SUN_01
+ UX_2_SUN_02
+ UX_2_SUN_03
+ UX_2_SUN_04
+ UX_2_SUN_05
+ UX_2_SUN_06
+ UX_3_FRI_01
+ UX_3_FRI_02
+ UX_3_FRI_03
+ UX_3_FRI_04
+ UX_3_FRI_05
+ UX_3_FRI_06
+ UX_3_SAT_01
+ UX_3_SAT_02
+ UX_3_SAT_03
+ UX_3_SAT_04
+ UX_3_SAT_05
+ UX_3_SAT_06
+ UX_3_SUN_01
+ UX_3_SUN_02
+ UX_3_SUN_03
+ UX_3_SUN_04
+ UX_3_SUN_05
+ UX_3_SUN_06
+ UX_4_FRI_01
+ UX_4_FRI_02
+ UX_4_FRI_03
+ UX_4_FRI_04
+ UX_4_FRI_05
+ UX_4_FRI_06
+ UX_4_SAT_01
+ UX_4_SAT_02
+ UX_4_SAT_03
+ UX_4_SAT_04
+ UX_4_SAT_05
+ UX_4_SAT_06
+ UX_4_SUN_01
+ UX_4_SUN_02
+ UX_4_SUN_03
+ UX_4_SUN_04
+ UX_4_SUN_05
+ UX_4_SUN_06
+nlgcp57nw0001:~ #
+
+
+nsradmin> p type:NSR label
+                        type: NSR label;
+                        name: PC Archive Clone;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv_c, pcarchive,
+                              001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv_c.pcarchive.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: LOG;
+                     comment: ;
+                      fields: LOG, 201-299;
+                   separator: .;
+                        next: LOG.204;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: PC Archive;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv, pcarchive, 001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv.pcarchive.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Indexed Archive Clone;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv_c, idxarchive,
+                              001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv_c.idxarchive.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Indexed Archive;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv, idxarchive,
+                              001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv.idxarchive.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: DD Cloud Tier Default Clone;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv_c, ddctdefault,
+                              001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv_c.ddctdefault.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Archive Clone;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv_c, archive, 001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv_c.archive.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Data Domain Default Clone;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv_c, dddefault,
+                              001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv_c.dddefault.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Archive;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv, archive, 001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv.archive.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Data Domain Default;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv, dddefault, 001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv.dddefault.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Two Sided;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv, 001-999, a-b;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv.001.a;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Offsite;
+                     comment: ;
+                      fields: Offsite, 001-999;
+                   separator: .;
+                        next: Offsite.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Default Clone;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv_c, 001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv_c.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: NonFull;
+                     comment: ;
+                      fields: NonFull, 001-999;
+                   separator: .;
+                        next: NonFull.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Default;
+                     comment: ;
+                      fields: nlgcp57nw0001.dc057.sf.priv, 001-999;
+                   separator: .;
+                        next: nlgcp57nw0001.dc057.sf.priv.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: Full;
+                     comment: ;
+                      fields: Full, 001-999;
+                   separator: .;
+                        next: Full.001;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: FS;
+                     comment: ;
+                      fields: FS, 301-399;
+                   separator: .;
+                        next: FS.304;
+        restricted data zone: ;
+
+                        type: NSR label;
+                        name: DB;
+                     comment: ;
+                      fields: DB, 101-199;
+                   separator: .;
+                        next: DB.104;
+        restricted data zone: ;
+nsradmin>
+
+
+nsradmin> p type:NSR pool
+                        type: NSR pool;
+                        name: LOG;
+                     comment: To be used by database log backups.;
+                     enabled: Yes;
+                   pool type: Backup;
+              label template: LOG;
+                     devices: dev201, dev202, dev203;
+         store index entries: Yes;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: Data Domain;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: FS;
+                     comment: ;
+                     enabled: Yes;
+                   pool type: Backup;
+              label template: FS;
+                     devices: dev301, dev302, dev303;
+         store index entries: Yes;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: Data Domain;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: DB;
+                     comment: To be used by database backups.;
+                     enabled: Yes;
+                   pool type: Backup;
+              label template: DB;
+                     devices: dev101, dev102, dev103;
+         store index entries: Yes;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: Data Domain;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: Archive;
+                     comment: ;
+                     enabled: Yes;
+                   pool type: Archive;
+              label template: Archive;
+                     devices: ;
+         store index entries: No;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: ;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: Default Clone;
+                     comment: ;
+                     enabled: Yes;
+                   pool type: Backup Clone;
+              label template: Default Clone;
+                     devices: ;
+         store index entries: No;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: ;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: DD Cloud Tier Default Clone;
+                     comment: Default DD Cloud Tier clone pool;
+                     enabled: Yes;
+                   pool type: Backup Clone;
+              label template: DD Cloud Tier Default Clone;
+                     devices: ;
+         store index entries: No;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: DD Cloud Tier;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: Data Domain Default Clone;
+                     comment: \
+Default Data Domain clone pool for the protection policy 'Gold';
+                     enabled: Yes;
+                   pool type: Backup Clone;
+              label template: Data Domain Default Clone;
+                     devices: ;
+         store index entries: No;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: Data Domain;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: Default;
+                     comment: ;
+                     enabled: Yes;
+                   pool type: Backup;
+              label template: Default;
+                     devices: ;
+         store index entries: Yes;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: ;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: Data Domain Default;
+                     comment: \
+Default Data Domain pool for the protection policy 'Gold';
+                     enabled: Yes;
+                   pool type: Backup;
+              label template: Data Domain Default;
+                     devices: ;
+         store index entries: Yes;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: Data Domain;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: Indexed Archive Clone;
+                     comment: ;
+                     enabled: Yes;
+                   pool type: Archive Clone;
+              label template: Indexed Archive Clone;
+                     devices: ;
+         store index entries: No;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: ;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: Indexed Archive;
+                     comment: ;
+                     enabled: Yes;
+                   pool type: Archive;
+              label template: Indexed Archive;
+                     devices: ;
+         store index entries: Yes;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: ;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: PC Archive;
+                     comment: ;
+                     enabled: Yes;
+                   pool type: Archive;
+              label template: PC Archive;
+                     devices: ;
+         store index entries: Yes;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: ;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: Archive Clone;
+                     comment: ;
+                     enabled: Yes;
+                   pool type: Archive Clone;
+              label template: Archive Clone;
+                     devices: ;
+         store index entries: No;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: ;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+
+                        type: NSR pool;
+                        name: PC Archive Clone;
+                     comment: ;
+                     enabled: Yes;
+                   pool type: Archive Clone;
+              label template: PC Archive Clone;
+                     devices: ;
+         store index entries: No;
+           auto media verify: No;
+      Recycle to other pools: No;
+    Recycle from other pools: No;
+         media type required: ;
+      volume type preference: ;
+             max parallelism: 0;
+                   WORM pool: No;
+              create DLTWORM: No;
+              barcode prefix: ;
+               recycle start: ;
+            recycle interval: "24:00";
+      max volumes to recycle: 200;
+        restricted data zone: ;
+nsradmin>
+
+
+nsradmin> p type:NSR device
+                        type: NSR device;
+                        name: dev202;
+                     comment: ;
+                 description: ;
+   device access information: \
+"nlgcp57dd0001.dc057.sf.priv:/nlgcp57nw0001/dev202";
+        enable fibre channel: No;
+      fibre channel hostname: ;
+                message_I18N: "writing, idle ";
+                     message: "writing, idle ";
+                 volume name: LOG.202;
+                media family: disk;
+                  media type: Data Domain;
+                     enabled: Yes;
+                   read only: No;
+             target sessions: 20;
+                max sessions: 60;
+            max nsrmmd count: 7;
+       verify label on eject: No;
+                 volume pool: LOG;
+              parent jukebox: ;
+           cleaning required: No;
+           cleaning interval: ;
+           date last cleaned: ;
+       auto media management: No;
+                        ndmp: No;
+      dedicated storage node: ;
+                       hosts: ;
+      DD Retention Lock Mode: None;
+                 remote user: dduser;
+                    password: *******;
+                 hardware id: ;
+                     path id: \
+70e2f762-00000010-b33f19ef-62aa79be-00050142-65b1eb0a;
+                 export path: ;
+                         CDI: Not used;
+ Warn on suspect volumes (%): 80;
+          TapeAlert Critical: ;
+           TapeAlert Warning: ;
+       TapeAlert Information: ;
+                WORM capable: No;
+             DLTWORM capable: No;
+      WORM cartridge present: No;
+        device serial number: ;
+        restricted data zone: ;
+
+                        type: NSR device;
+                        name: dev303;
+                     comment: ;
+                 description: ;
+   device access information: \
+"nlgcp57dd0001.dc057.sf.priv:/nlgcp57nw0001/dev303";
+        enable fibre channel: No;
+      fibre channel hostname: ;
+                message_I18N: "writing at 409 MB/s, 66 GB, 1 session";
+                     message: "writing at 409 MB/s, 66 GB, 1 session";
+                 volume name: FS.303;
+                media family: disk;
+                  media type: Data Domain;
+                     enabled: Yes;
+                   read only: No;
+             target sessions: 20;
+                max sessions: 60;
+            max nsrmmd count: 7;
+       verify label on eject: No;
+                 volume pool: FS;
+              parent jukebox: ;
+           cleaning required: No;
+           cleaning interval: ;
+           date last cleaned: ;
+       auto media management: No;
+                        ndmp: No;
+      dedicated storage node: ;
+                       hosts: ;
+      DD Retention Lock Mode: None;
+                 remote user: dduser;
+                    password: *******;
+                 hardware id: ;
+                     path id: \
+bd13ceb0-00000010-b33fea61-62aa7a36-00090142-65b1eb0a;
+                 export path: ;
+                         CDI: Not used;
+ Warn on suspect volumes (%): 80;
+          TapeAlert Critical: ;
+           TapeAlert Warning: ;
+       TapeAlert Information: ;
+                WORM capable: No;
+             DLTWORM capable: No;
+      WORM cartridge present: No;
+        device serial number: ;
+        restricted data zone: ;
+
+                        type: NSR device;
+                        name: dev203;
+                     comment: ;
+                 description: ;
+   device access information: \
+"nlgcp57dd0001.dc057.sf.priv:/nlgcp57nw0001/dev203";
+        enable fibre channel: No;
+      fibre channel hostname: ;
+                message_I18N: "writing, done ";
+                     message: "writing, done ";
+                 volume name: LOG.203;
+                media family: disk;
+                  media type: Data Domain;
+                     enabled: Yes;
+                   read only: No;
+             target sessions: 20;
+                max sessions: 60;
+            max nsrmmd count: 7;
+       verify label on eject: No;
+                 volume pool: LOG;
+              parent jukebox: ;
+           cleaning required: No;
+           cleaning interval: ;
+           date last cleaned: ;
+       auto media management: No;
+                        ndmp: No;
+      dedicated storage node: ;
+                       hosts: ;
+      DD Retention Lock Mode: None;
+                 remote user: dduser;
+                    password: *******;
+                 hardware id: ;
+                     path id: \
+723cb5c8-00000010-b33f19f0-62aa79dd-00060142-65b1eb0a;
+                 export path: ;
+                         CDI: Not used;
+ Warn on suspect volumes (%): 80;
+          TapeAlert Critical: ;
+           TapeAlert Warning: ;
+       TapeAlert Information: ;
+                WORM capable: No;
+             DLTWORM capable: No;
+      WORM cartridge present: No;
+        device serial number: ;
+        restricted data zone: ;
+
+                        type: NSR device;
+                        name: dev301;
+                     comment: ;
+                 description: ;
+   device access information: \
+"nlgcp57dd0001.dc057.sf.priv:/nlgcp57nw0001/dev301";
+        enable fibre channel: No;
+      fibre channel hostname: ;
+                message_I18N: "writing, done ";
+                     message: "writing, done ";
+                 volume name: FS.301;
+                media family: disk;
+                  media type: Data Domain;
+                     enabled: Yes;
+                   read only: No;
+             target sessions: 20;
+                max sessions: 60;
+            max nsrmmd count: 7;
+       verify label on eject: No;
+                 volume pool: FS;
+              parent jukebox: ;
+           cleaning required: No;
+           cleaning interval: ;
+           date last cleaned: ;
+       auto media management: No;
+                        ndmp: No;
+      dedicated storage node: ;
+                       hosts: ;
+      DD Retention Lock Mode: None;
+                 remote user: dduser;
+                    password: *******;
+                 hardware id: ;
+                     path id: \
+70762bc2-00000010-b33fea5f-62aa79fa-00070142-65b1eb0a;
+                 export path: ;
+                         CDI: Not used;
+ Warn on suspect volumes (%): 80;
+          TapeAlert Critical: ;
+           TapeAlert Warning: ;
+       TapeAlert Information: ;
+                WORM capable: No;
+             DLTWORM capable: No;
+      WORM cartridge present: No;
+        device serial number: ;
+        restricted data zone: ;
+
+                        type: NSR device;
+                        name: dev201;
+                     comment: ;
+                 description: ;
+   device access information: \
+"nlgcp57dd0001.dc057.sf.priv:/nlgcp57nw0001/dev201";
+        enable fibre channel: No;
+      fibre channel hostname: ;
+                message_I18N: space recovered from volume LOG.201;
+                     message: space recovered from volume LOG.201;
+                 volume name: LOG.201;
+                media family: disk;
+                  media type: Data Domain;
+                     enabled: Yes;
+                   read only: No;
+             target sessions: 20;
+                max sessions: 60;
+            max nsrmmd count: 7;
+       verify label on eject: No;
+                 volume pool: LOG;
+              parent jukebox: ;
+           cleaning required: No;
+           cleaning interval: ;
+           date last cleaned: ;
+       auto media management: No;
+                        ndmp: No;
+      dedicated storage node: ;
+                       hosts: ;
+      DD Retention Lock Mode: None;
+                 remote user: dduser;
+                    password: *******;
+                 hardware id: ;
+                     path id: \
+37516f80-00000010-b33f19ee-62aa799c-00040142-65b1eb0a;
+                 export path: ;
+                         CDI: Not used;
+ Warn on suspect volumes (%): 80;
+          TapeAlert Critical: ;
+           TapeAlert Warning: ;
+       TapeAlert Information: ;
+                WORM capable: No;
+             DLTWORM capable: No;
+      WORM cartridge present: No;
+        device serial number: ;
+        restricted data zone: ;
+
+                        type: NSR device;
+                        name: dev101;
+                     comment: ;
+                 description: ;
+   device access information: \
+"nlgcp57dd0001.dc057.sf.priv:/nlgcp57nw0001/dev101";
+        enable fibre channel: No;
+      fibre channel hostname: ;
+                message_I18N: "writing, done ";
+                     message: "writing, done ";
+                 volume name: DB.101;
+                media family: disk;
+                  media type: Data Domain;
+                     enabled: Yes;
+                   read only: No;
+             target sessions: 20;
+                max sessions: 60;
+            max nsrmmd count: 7;
+       verify label on eject: No;
+                 volume pool: DB;
+              parent jukebox: ;
+           cleaning required: No;
+           cleaning interval: ;
+           date last cleaned: ;
+       auto media management: No;
+                        ndmp: No;
+      dedicated storage node: ;
+                       hosts: ;
+      DD Retention Lock Mode: None;
+                 remote user: dduser;
+                    password: *******;
+                 hardware id: ;
+                     path id: \
+061974f7-00000010-b33e497d-62aa792d-00010142-65b1eb0a;
+                 export path: ;
+                         CDI: Not used;
+ Warn on suspect volumes (%): 80;
+          TapeAlert Critical: ;
+           TapeAlert Warning: ;
+       TapeAlert Information: ;
+                WORM capable: No;
+             DLTWORM capable: No;
+      WORM cartridge present: No;
+        device serial number: ;
+        restricted data zone: ;
+
+                        type: NSR device;
+                        name: dev103;
+                     comment: ;
+                 description: ;
+   device access information: \
+"nlgcp57dd0001.dc057.sf.priv:/nlgcp57nw0001/dev103";
+        enable fibre channel: No;
+      fibre channel hostname: ;
+                message_I18N: "writing, done ";
+                     message: "writing, done ";
+                 volume name: DB.103;
+                media family: disk;
+                  media type: Data Domain;
+                     enabled: Yes;
+                   read only: No;
+             target sessions: 20;
+                max sessions: 60;
+            max nsrmmd count: 7;
+       verify label on eject: No;
+                 volume pool: DB;
+              parent jukebox: ;
+           cleaning required: No;
+           cleaning interval: ;
+           date last cleaned: ;
+       auto media management: No;
+                        ndmp: No;
+      dedicated storage node: ;
+                       hosts: ;
+      DD Retention Lock Mode: None;
+                 remote user: dduser;
+                    password: *******;
+                 hardware id: ;
+                     path id: \
+adbc1409-00000010-b33e497f-62aa797d-00030142-65b1eb0a;
+                 export path: ;
+                         CDI: Not used;
+ Warn on suspect volumes (%): 80;
+          TapeAlert Critical: ;
+           TapeAlert Warning: ;
+       TapeAlert Information: ;
+                WORM capable: No;
+             DLTWORM capable: No;
+      WORM cartridge present: No;
+        device serial number: ;
+        restricted data zone: ;
+
+                        type: NSR device;
+                        name: dev302;
+                     comment: ;
+                 description: ;
+   device access information: \
+"nlgcp57dd0001.dc057.sf.priv:/nlgcp57nw0001/dev302";
+        enable fibre channel: No;
+      fibre channel hostname: ;
+                message_I18N: "writing, done ";
+                     message: "writing, done ";
+                 volume name: FS.302;
+                media family: disk;
+                  media type: Data Domain;
+                     enabled: Yes;
+                   read only: No;
+             target sessions: 20;
+                max sessions: 60;
+            max nsrmmd count: 7;
+       verify label on eject: No;
+                 volume pool: FS;
+              parent jukebox: ;
+           cleaning required: No;
+           cleaning interval: ;
+           date last cleaned: ;
+       auto media management: No;
+                        ndmp: No;
+      dedicated storage node: ;
+                       hosts: ;
+      DD Retention Lock Mode: None;
+                 remote user: dduser;
+                    password: *******;
+                 hardware id: ;
+                     path id: \
+e6e19944-00000010-b33fea60-62aa7a18-00080142-65b1eb0a;
+                 export path: ;
+                         CDI: Not used;
+ Warn on suspect volumes (%): 80;
+          TapeAlert Critical: ;
+           TapeAlert Warning: ;
+       TapeAlert Information: ;
+                WORM capable: No;
+             DLTWORM capable: No;
+      WORM cartridge present: No;
+        device serial number: ;
+        restricted data zone: ;
+
+                        type: NSR device;
+                        name: dev102;
+                     comment: ;
+                 description: ;
+   device access information: \
+"nlgcp57dd0001.dc057.sf.priv:/nlgcp57nw0001/dev102";
+        enable fibre channel: No;
+      fibre channel hostname: ;
+                message_I18N: space recovered from volume DB.102;
+                     message: space recovered from volume DB.102;
+                 volume name: DB.102;
+                media family: disk;
+                  media type: Data Domain;
+                     enabled: Yes;
+                   read only: No;
+             target sessions: 20;
+                max sessions: 60;
+            max nsrmmd count: 7;
+       verify label on eject: No;
+                 volume pool: DB;
+              parent jukebox: ;
+           cleaning required: No;
+           cleaning interval: ;
+           date last cleaned: ;
+       auto media management: No;
+                        ndmp: No;
+      dedicated storage node: ;
+                       hosts: ;
+      DD Retention Lock Mode: None;
+                 remote user: dduser;
+                    password: *******;
+                 hardware id: ;
+                     path id: \
+6a9f2c8c-00000010-b33e497e-62aa795e-00020142-65b1eb0a;
+                 export path: ;
+                         CDI: Not used;
+ Warn on suspect volumes (%): 80;
+          TapeAlert Critical: ;
+           TapeAlert Warning: ;
+       TapeAlert Information: ;
+                WORM capable: No;
+             DLTWORM capable: No;
+      WORM cartridge present: No;
+        device serial number: ;
+        restricted data zone: ;
+nsradmin>
+
+
+nsradmin> p type:NSR directive
+                        type: NSR directive;
+                        name: no_ux_databases;
+                     comment: ;
+                   directive: \
+"<< / >>
+        +null: .snapshot
+<< / >>
+        +null: .snapshot*
+<< / >>
+        +null: *datavolume*.dat
+<< / >>
+        +null: *datavolume*.dat*
+<< / >>
+        +null: expOPT5
+<< / >>
+        +null: *_NLS_*.IQ *_NLS_*.IQ* *_NLS.log *_NLS.log* *_NLS_*.dmp.*
+<</hana/data/mig>>
+                +null: *
+<< / >>
+        +null: *_databackup_*
+<< / >>
+        +null: log_backup_*
+<< / >>
+        +null: *logsegment*.dat
+<< / >>
+        +null: *notsaved*
+<< / >>
+        +null: *NOTSAVED*
+<< / >>
+        +null: *data*.dat *log*.dat
+<< / >>
+        +null: *.dbf*
+<< / >>
+        +null: *.container*
+<< / >>
+        +null: .*_databackup_*
+<< / >>
+        +null: *DISKD* *DISKL*
+<< /oracle >>
+        +null: .?* *
+<< /opt/EMCas52 >>
+        +null: .?* *
+<< /opt/cluster/EMCas52 >>
+        +null: .?* *
+<< /ixos/oracle/OAR >>
+        +null: .?* *
+<< /ixos/oracle/OA1 >>
+        +null: .?* *
+<< /sapdb >>
+        +null: .?* *
+<< /informix >>
+        +null: .?* *
+<< /dbarchive >>
+        +null: .?* *
+<< /db2 >>
+        +null: .?* *
+<< /sybase >>
+        +null: *data*.dat *log*.dat
+<< /adabas >>
+        +null:  .?* *
+<< /sys >>
+        +null: .?* *
+<< /tmp >>
+        +null: .?* *
+<< /install >>
+        +null: * .?*";
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: Mac OS standard directives;
+                     comment: ;
+                   directive: "
+<< / >>
+        skip: usr
+        skip: bin
+        skip: sbin
+        skip: cores
+        skip: mach_kernel
+        skip: dev
+        skip: .vol
+        +skip: .Spotlight-V100
+        +skip: .TemporaryItems
+        skip: .hotfiles.btree
+        +skip: .fseventsd
+<< /nsr >>
+        allow
+<< /nsr/logs >>
+        logasm: .
+<< /private/var >>
+        logasm: *
+<< /private/var/db/openldap >>
+        skip: .
+<< /private/var/db/CoreDuet >>
+        skip: .
+<< /private/var/db/ConfigurationProfiles >>
+        skip: .
+<< /private/var/db/fpsd >>
+        skip: .
+<< /private/var/folders >>
+        +skip: .?* *
+<< /private/var/vm >>
+        swapasm: .
+<< /private/tmp >>
+        skip: .?* *
+<< /System >>
+        null: .?* *
+<< /System/Volumes/Data >>
+        skip: System
+        skip: usr
+        skip: bin
+        skip: sbin
+        skip: cores
+        skip: mach_kernel
+        skip: dev
+        skip: .vol
+        +skip: .Spotlight-V100
+        +skip: .TemporaryItems
+        skip: .hotfiles.btree
+        +skip: .fseventsd
+        +skip: .HFS+ Private Directory Data?
+        +skip: .PKInstallSandboxManager-SystemSoftware
+        +skip: .DocumentRevisions-V100
+<< /System/Volumes/Data/private/tmp >>
+        skip: .?* *
+<< /System/Volumes/Data/private/var >>
+        logasm: *
+<< /System/Volumes/Data/private/var/vm >>
+        swapasm: .
+<< /System/Volumes/Data/private/var/db/CoreDuet >>
+        skip: .
+<< /System/Volumes/Data/private/var/db/ConfigurationProfiles >>
+        skip: .
+<< /System/Volumes/Data/private/var/db/fpsd >>
+        skip: .
+<< /System/Volumes/Data/private/var/db/openldap >>
+        skip: .
+<< /System/Volumes/Data/private/var/folders >>
+        +skip: .?* *
+<< /usr/local/nsr >>
+        allow
+<< /usr/local/nsr/logs >>
+        logasm: .";
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: NT with compression directives;
+                     comment: ;
+                   directive: "
+<< / >>
+        +compressasm: .";
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: no_nt_databases;
+                     comment: ;
+                   directive: \
+"<< \"c:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"d:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"e:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"f:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"g:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"h:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"i:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"j:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"k:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"l:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"m:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"n:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"o:\\sapdb\" >>
+        +null: DISKD* DISKL*
+<< \"c:\\db2\" >>
+        +null: .?* *
+<< \"d:\\db2\" >>
+        +null: .?* *
+<< \"e:\\db2\" >>
+        +null: .?* *
+<< \"e:\\db2bop\" >>
+        +null: .?* *
+<< \"e:\\db2bot\" >>
+        +null: .?* *
+<< \"e:\\db2box\" >>
+        +null: .?* *
+<< \"e:\\db2bxid\" >>
+        +null: .?* *
+<< \"e:\\ARP\" >>
+        +null: .?* *
+<< \"e:\\AUD\" >>
+        +null: .?* *
+<< \"e:\\CMS\" >>
+        +null: .?* *
+<< \"e:\\DI\" >>
+        +null: .?* *
+<< \"e:\\db2bxit\" >>
+        +null: .?* *
+<< \"e:\\db2nbx\" >>
+        +null: .?* *
+<< \"e:\\db2nbv\" >>
+        +null: .?* *
+<< \"e:\\db2nbt\" >>
+        +null: .?* *
+<< \"e:\\db2nbp\" >>
+        +null: .?* *
+<< \"e:\\db2bmx\" >>
+        +null: .?* *
+<< \"e:\\db2bmp\" >>
+        +null: .?* *
+<< \"f:\\db2\" >>
+        +null: .?* *
+<< \"f:\\db2bop\" >>
+        +null: .?* *
+<< \"f:\\db2bot\" >>
+        +null: .?* *
+<< \"f:\\db2box\" >>
+        +null: .?* *
+<< \"f:\\db2bxid\" >>
+        +null: .?* *
+<< \"f:\\ARP\" >>
+        +null: .?* *
+<< \"f:\\AUD\" >>
+        +null: .?* *
+<< \"f:\\CMS\" >>
+        +null: .?* *
+<< \"f:\\DI\" >>
+        +null: .?* *
+<< \"f:\\db2bxit\" >>
+        +null: .?* *
+<< \"f:\\db2nbx\" >>
+        +null: .?* *
+<< \"f:\\db2nbv\" >>
+        +null: .?* *
+<< \"f:\\db2nbt\" >>
+        +null: .?* *
+<< \"f:\\db2nbp\" >>
+        +null: .?* *
+<< \"f:\\db2bmx\" >>
+        +null: .?* *
+<< \"f:\\db2bmp\" >>
+        +null: .?* *
+<< \"g:\\db2\" >>
+        +null: .?* *
+<< \"h:\\db2\" >>
+        +null: .?* *
+<< \"i:\\db2\" >>
+        +null: .?* *
+<< \"j:\\db2\" >>
+        +null: .?* *
+<< \"k:\\db2\" >>
+        +null: .?* *
+<< \"l:\\db2\" >>
+        +null: .?* *
+<< \"m:\\db2\" >>
+        +null: .?* *
+<< \"n:\\db2\" >>
+        +null: .?* *
+<< \"o:\\db2\" >>
+        +null: .?* *
+<< \"c:\\oracle\" >>
+        +null: .?* *
+<< \"d:\\oracle\" >>
+        +null: .?* *
+<< \"e:\\oracle\" >>
+        +null: .?* *
+<< \"f:\\oracle\" >>
+        +null: .?* *
+<< \"g:\\oracle\" >>
+        +null: .?* *
+<< \"h:\\oracle\" >>
+        +null: .?* *
+<< \"i:\\oracle\" >>
+        +null: .?* *
+<< \"j:\\oracle\" >>
+        +null: .?* *
+<< \"k:\\oracle\" >>
+        +null: .?* *
+<< \"l:\\oracle\" >>
+        +null: .?* *
+<< \"m:\\oracle\" >>
+        +null: .?* *
+<< \"n:\\oracle\" >>
+        +null: .?* *
+<< \"o:\\oracle\" >>
+        +null: .?* *
+<<\"C:\\\">>
+                +null:*.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVED\
+*
+<<\"D:\\\">>
+                +null:*.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVED\
+*
+<<\"E:\\\">>
+                +null:*.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVED\
+*
+<<\"F:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*
+<<\"G:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*
+<<\"H:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*
+<<\"I:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*
+<<\"J:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*
+<<\"K:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*
+<<\"L:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*
+<<\"M:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*
+<<\"N:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*
+<<\"O:\\\">>
+                +null: *.ldf *.mdf *.ndf *.LDF *.MDF *.NDF *notsaved* *NOTSAVE\
+D*";
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: Default with compression;
+                     comment: ;
+                   directive: "
+<< / >>
+        skip: tmp_mnt
+        +skip: core
+        +compressasm: .
+<< /tmp >>
+        skip: .?* *
+<< /export/swap >>
+        swapasm: .
+<< /nsr >>
+        allow
+<< /nsr/logs >>
+        logasm: .
+<< /var >>
+        logasm: *
+<< /usr/adm >>
+        logasm: .
+<< /usr/spool >>
+        logasm: .
+<< /usr/spool/mail >>
+        mailasm: .
+<< /usr/mail >>
+        mailasm: .";
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: NT standard directives;
+                     comment: ;
+                   directive: ;
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: Default;
+                     comment: ;
+                   directive: "
+<< / >>
+        skip: tmp_mnt
+        +skip: core
+<< /tmp >>
+        skip: .?* *
+<< /export/swap >>
+        swapasm: .
+<< /nsr >>
+        allow
+<< /nsr/logs >>
+        logasm: .
+<< /var >>
+        logasm: .
+<< /usr/adm >>
+        logasm: .
+<< /usr/spool >>
+        logasm: .
+<< /usr/spool/mail >>
+        mailasm: .
+<< /usr/mail >>
+        mailasm: .";
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: Unix with compression directives;
+                     comment: ;
+                   directive: "
+<< / >>
+        skip: tmp_mnt
+        +skip: core
+        +compressasm: .
+<< /tmp >>
+        skip: .?* *
+<< /export/swap >>
+        swapasm: .
+<< /nsr >>
+        allow
+<< /nsr/logs >>
+        logasm: .
+<< /var >>
+        logasm: *
+<< /usr/adm >>
+        logasm: .
+<< /usr/spool >>
+        logasm: .
+<< /usr/spool/mail >>
+        mailasm: .
+<< /usr/mail >>
+        mailasm: .";
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: VCB directive;
+                     comment: ;
+                   directive: ;
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: Unix standard directives;
+                     comment: ;
+                   directive: "
+<< / >>
+        skip: tmp_mnt
+        +skip: core
+<< /tmp >>
+        skip: .?* *
+<< /export/swap >>
+        swapasm: .
+<< /nsr >>
+        allow
+<< /nsr/logs >>
+        logasm: .
+<< /var >>
+        logasm: .
+<< /usr/adm >>
+        logasm: .
+<< /usr/spool >>
+        logasm: .
+<< /usr/spool/mail >>
+        mailasm: .
+<< /usr/mail >>
+        mailasm: .";
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: Mac OS with compression directives;
+                     comment: ;
+                   directive: "
+<< / >>
+        skip: usr
+        skip: bin
+        skip: sbin
+        skip: cores
+        skip: mach_kernel
+        skip: dev
+        skip: .vol
+        +skip: .Spotlight-V100
+        +skip: .TemporaryItems
+        skip: .hotfiles.btree
+        +skip: .fseventsd
+        +compressasm: .
+<< /nsr >>
+        allow
+<< /nsr/logs >>
+        logasm: .
+<< /private/var >>
+        logasm: *
+<< /private/var/db/openldap >>
+        skip: .
+<< /private/var/db/CoreDuet >>
+        skip: .
+<< /private/var/db/ConfigurationProfiles >>
+        skip: .
+<< /private/var/db/fpsd >>
+        skip: .
+<< /private/var/folders >>
+        +skip: .?* *
+<< /private/tmp >>
+        skip: .?* *
+<< /private/var/vm >>
+        swapasm: .
+<< /System >>
+        null: .?* *
+<< /System/Volumes/Data >>
+        skip: System
+        skip: usr
+        skip: bin
+        skip: sbin
+        skip: cores
+        skip: mach_kernel
+        skip: dev
+        skip: .vol
+        +skip: .Spotlight-V100
+        +skip: .TemporaryItems
+        skip: .hotfiles.btree
+        +skip: .fseventsd
+        +skip: .HFS+ Private Directory Data?
+        +skip: .PKInstallSandboxManager-SystemSoftware
+        +skip: .DocumentRevisions-V100
+        +compressasm: .
+<< /System/Volumes/Data/private/tmp >>
+        skip: .?* *
+<< /System/Volumes/Data/private/var >>
+        logasm: *
+<< /System/Volumes/Data/private/var/vm >>
+        swapasm: .
+<< /System/Volumes/Data/private/var/db/CoreDuet >>
+        skip: .
+<< /System/Volumes/Data/private/var/db/ConfigurationProfiles >>
+        skip: .
+<< /System/Volumes/Data/private/var/db/fpsd >>
+        skip: .
+<< /System/Volumes/Data/private/var/db/openldap >>
+        skip: .
+<< /System/Volumes/Data/private/var/folders >>
+        +skip: .?* *
+<< /usr/local/nsr >>
+        allow
+<< /usr/local/nsr/logs >>
+        logasm: .";
+        restricted data zone: ;
+
+                        type: NSR directive;
+                        name: Encryption directive;
+                     comment: ;
+                   directive: "
+<< / >>
+        +aes: *";
+        restricted data zone: ;
+nsradmin>
+
+
+
+
+nlgcp57nw0001:~ #  for POLICY in $(nsrpolicy policy list); do for WORKFLOW in $(nsrpolicy workflow list -p $POLICY);do echo $POLICY $WORKFLOW;nsrpolicy workflow display -p $POLICY -w $WORKFLOW|tail -2|head -1;done;done
+FS_BACKUP NT_1_SUN_01
+    "workflowStarttime": "15:20"
+FS_BACKUP NT_2_SUN_01
+    "workflowStarttime": "15:40"
+FS_BACKUP NT_3_SUN_01
+    "workflowStarttime": "15:50"
+FS_BACKUP NT_4_SUN_01
+    "workflowStarttime": "16:00"
+FS_BACKUP UX_1_FRI_01
+    "workflowStarttime": "16:10"
+FS_BACKUP UX_1_FRI_02
+    "workflowStarttime": "16:20"
+FS_BACKUP UX_1_FRI_03
+    "workflowStarttime": "16:40"
+FS_BACKUP UX_1_FRI_04
+    "workflowStarttime": "16:50"
+FS_BACKUP UX_1_FRI_05
+    "workflowStarttime": "17:00"
+FS_BACKUP UX_1_FRI_06
+    "workflowStarttime": "17:10"
+FS_BACKUP UX_1_SAT_01
+    "workflowStarttime": "17:20"
+FS_BACKUP UX_1_SAT_02
+    "workflowStarttime": "17:40"
+FS_BACKUP UX_1_SAT_03
+    "workflowStarttime": "17:50"
+FS_BACKUP UX_1_SAT_04
+    "workflowStarttime": "18:00"
+FS_BACKUP UX_1_SAT_05
+    "workflowStarttime": "18:10"
+FS_BACKUP UX_1_SAT_06
+    "workflowStarttime": "18:20"
+FS_BACKUP UX_1_SUN_01
+    "workflowStarttime": "18:40"
+FS_BACKUP UX_1_SUN_02
+    "workflowStarttime": "18:50"
+FS_BACKUP UX_1_SUN_03
+    "workflowStarttime": "19:00"
+FS_BACKUP UX_1_SUN_04
+    "workflowStarttime": "19:10"
+FS_BACKUP UX_1_SUN_05
+    "workflowStarttime": "19:20"
+FS_BACKUP UX_1_SUN_06
+    "workflowStarttime": "19:40"
+FS_BACKUP UX_2_FRI_01
+    "workflowStarttime": "19:50"
+FS_BACKUP UX_2_FRI_02
+    "workflowStarttime": "20:10"
+FS_BACKUP UX_2_FRI_03
+    "workflowStarttime": "20:20"
+FS_BACKUP UX_2_FRI_04
+    "workflowStarttime": "20:40"
+FS_BACKUP UX_2_FRI_05
+    "workflowStarttime": "20:50"
+FS_BACKUP UX_2_FRI_06
+    "workflowStarttime": "21:00"
+FS_BACKUP UX_2_SAT_01
+    "workflowStarttime": "21:10"
+FS_BACKUP UX_2_SAT_02
+    "workflowStarttime": "21:20"
+FS_BACKUP UX_2_SAT_03
+    "workflowStarttime": "21:40"
+FS_BACKUP UX_2_SAT_04
+    "workflowStarttime": "21:50"
+FS_BACKUP UX_2_SAT_05
+    "workflowStarttime": "22:00"
+FS_BACKUP UX_2_SAT_06
+    "workflowStarttime": "22:10"
+FS_BACKUP UX_2_SUN_01
+    "workflowStarttime": "22:20"
+FS_BACKUP UX_2_SUN_02
+    "workflowStarttime": "22:40"
+FS_BACKUP UX_2_SUN_03
+    "workflowStarttime": "22:50"
+FS_BACKUP UX_2_SUN_04
+    "workflowStarttime": "23:00"
+FS_BACKUP UX_2_SUN_05
+    "workflowStarttime": "23:10"
+FS_BACKUP UX_2_SUN_06
+    "workflowStarttime": "23:20"
+FS_BACKUP UX_3_FRI_01
+    "workflowStarttime": "23:40"
+FS_BACKUP UX_3_FRI_02
+    "workflowStarttime": "23:50"
+FS_BACKUP UX_3_FRI_03
+    "workflowStarttime": "00:00"
+FS_BACKUP UX_3_FRI_04
+    "workflowStarttime": "00:10"
+FS_BACKUP UX_3_FRI_05
+    "workflowStarttime": "00:20"
+FS_BACKUP UX_3_FRI_06
+    "workflowStarttime": "00:40"
+FS_BACKUP UX_3_SAT_01
+    "workflowStarttime": "00:50"
+FS_BACKUP UX_3_SAT_02
+    "workflowStarttime": "01:00"
+FS_BACKUP UX_3_SAT_03
+    "workflowStarttime": "01:10"
+FS_BACKUP UX_3_SAT_04
+    "workflowStarttime": "01:20"
+FS_BACKUP UX_3_SAT_05
+    "workflowStarttime": "01:40"
+FS_BACKUP UX_3_SAT_06
+    "workflowStarttime": "01:50"
+FS_BACKUP UX_3_SUN_01
+    "workflowStarttime": "02:00"
+FS_BACKUP UX_3_SUN_02
+    "workflowStarttime": "02:10"
+FS_BACKUP UX_3_SUN_03
+    "workflowStarttime": "02:20"
+FS_BACKUP UX_3_SUN_04
+    "workflowStarttime": "02:40"
+FS_BACKUP UX_3_SUN_05
+    "workflowStarttime": "02:50"
+FS_BACKUP UX_3_SUN_06
+    "workflowStarttime": "03:00"
+FS_BACKUP UX_4_FRI_01
+    "workflowStarttime": "16:15"
+FS_BACKUP UX_4_FRI_02
+    "workflowStarttime": "16:25"
+FS_BACKUP UX_4_FRI_03
+    "workflowStarttime": "16:35"
+FS_BACKUP UX_4_FRI_04
+    "workflowStarttime": "16:45"
+FS_BACKUP UX_4_FRI_05
+    "workflowStarttime": "16:55"
+FS_BACKUP UX_4_FRI_06
+    "workflowStarttime": "17:05"
+FS_BACKUP UX_4_SAT_01
+    "workflowStarttime": "17:15"
+FS_BACKUP UX_4_SAT_02
+    "workflowStarttime": "17:25"
+FS_BACKUP UX_4_SAT_03
+    "workflowStarttime": "17:35"
+FS_BACKUP UX_4_SAT_04
+    "workflowStarttime": "17:45"
+FS_BACKUP UX_4_SAT_05
+    "workflowStarttime": "17:55"
+FS_BACKUP UX_4_SAT_06
+    "workflowStarttime": "18:05"
+FS_BACKUP UX_4_SUN_01
+    "workflowStarttime": "18:15"
+FS_BACKUP UX_4_SUN_02
+    "workflowStarttime": "18:25"
+FS_BACKUP UX_4_SUN_03
+    "workflowStarttime": "18:35"
+FS_BACKUP UX_4_SUN_04
+    "workflowStarttime": "18:45"
+FS_BACKUP UX_4_SUN_05
+    "workflowStarttime": "18:55"
+FS_BACKUP UX_4_SUN_06
+    "workflowStarttime": "19:05"
+NSR_SERVER BOOTSTRAP
+    "workflowStarttime": "23:00"
+NSR_SERVER CFI_EXPIRE
+    "workflowStarttime": "08:00"
+NSR_SERVER NSR_SERVER
+    "workflowStarttime": "04:00"
+nlgcp57nw0001:~ #
